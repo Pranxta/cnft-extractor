@@ -1,0 +1,39 @@
+{
+    "manifest_version" :2,
+    "name" : "nftData",
+    "version" : "1.5.1",
+
+
+    "browser_action": {
+        "default_icon" : "icn.png"
+    },
+
+    "background" : {
+        "scripts" : ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://opencnft.io/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "inject-script.js",
+        "CSVExport.js"
+    ],
+    "externally_connectable": {
+        "matches": ["*://*.opencnft.io/*"]
+      },
+    "permissions" : [ 
+        "https://*/",
+        "tabs",
+        "storage",
+        "unlimitedStorage"
+    
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
