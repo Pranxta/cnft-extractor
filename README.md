@@ -15,7 +15,7 @@ Step 2:
 click on "load unpacked" and navigate to the folder containing the extracted files for the extension. Click on "Select Folder"
 
 Step 3:
-the "Update" button will now appear on the top menu of the https://opencnft.io webpage.
+the "Update" button will now appear on the top menu of the 'open cnft' webpage.
 Before using the first time, the extension has no data in its local storage to compare.
 Click on Update and a prompt will confirm that data has been extracted shortly.
 You can optionally download a copy of the extracted data as csv by clicking on the Download button that now appears.
