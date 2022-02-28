@@ -1,0 +1,200 @@
+#clock {
+    text-align: right;
+    float: right;
+}
+
+#comparer {
+    background-color:teal;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+}
+#date {
+    margin-top: 10px;
+    color: grey;
+}
+#timer {
+    color: cyan;
+}
+
+#reloader {
+    color: cyan;
+    background-color: slategrey;
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    padding: 0;
+    margin-top: -5px;
+    margin-left: 30px;
+}
+
+#reload {
+    margin: auto;
+    padding-top: 2px;
+}
+
+#ic-btn {
+    font-size: small;
+    padding-top: 30px;
+}
+
+select {
+    font-size: small;
+    height: 50px;
+}
+
+.filt {
+    font-size: small;
+    height: 30px;
+    margin: 20px 5px;
+}
+
+input {
+    height: 30px !important;
+    font-size: small;
+}
+
+#styled-table {
+    font-size: 1.1em;
+    max-width: 750px;
+    margin: auto;
+    padding: 0px;
+}
+
+thead tr th {
+    background-color: darkslategray;
+    font-size: 1em;
+    color: white;
+    border: 0px;
+    text-align: center;
+    width: 100px;
+}
+
+tr td {
+    
+    text-align: center;
+    max-width: 300px;
+    max-height: 100px;
+    overflow-x: hidden;
+}
+
+tr {
+    background: #202f3a;
+}
+tr:nth-child(even) {
+    background: #1d2a34;
+}
+
+.sidenav {
+    height: 270px; /* Full-height: remove this if you want "auto" height */
+    width: 50px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow: hidden; /* Disable horizontal scroll */
+    margin-top: 200px;
+    padding-top: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+#diplay {
+    text-align: center;
+}
+
+#table-topic {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+ .side-btn {
+    margin: auto;
+    width: 30px;
+    padding: 0;
+    padding-top: 2px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: wheat;
+    color: darkslategray;
+    
+  }
+
+.s-btn { 
+    padding: -10px;
+    width: 30px;
+  }
+
+#delete-btn {
+    background-color: rgb(155, 33, 33);
+    color: gainsboro;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+}
+
+
+.filter-btn {
+    background-color: rgb(107, 68, 68);
+    color: gainsboro;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    
+
+}
+
+#del-container {
+    display: none;
+}
+
+#filter-container {
+    display: none;
+}
+
+#scrollDiv {
+    position: fixed;
+    
+    height: 30px;
+    bottom: 0;
+    right:0;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+#scrollToTop {
+    height: 50px;
+    width: 50px;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding-top: 12px;
+    padding-left: 12px;
+    background-color: rgb(69, 50, 73);
+    color: rgb(143, 125, 125);
+}
+
+
+.one-day-change {
+    color: cornflowerblue;
+}
+
+.seven-day-change {
+    color:darkkhaki;
+}

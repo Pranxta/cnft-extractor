@@ -1,0 +1,180 @@
+<!DOCTYPE html >
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nFTData</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/pico.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="sidenav">
+      <div>
+        <button title="Default Sorting" class="side-btn" id="original">
+          <span class="material-icons s-btn">
+            article
+          </span>
+        </button>
+      </div>
+
+      <div>
+        <button title="Sort Alphabetically" class="side-btn" id="alphabet">
+          <span class="material-icons s-btn">
+            font_download
+          </span>
+        </button>
+      </div>
+
+      <div>
+        <button title="Sort By FP Delta" class="side-btn" id="delta">
+          <span class="material-icons s-btn">
+            change_history
+          </span>
+        </button>
+      </div>
+
+      <div>
+        <button title="Sort By FP Delta %" class="side-btn" id="percent">
+          <span class="material-icons s-btn">
+            percent
+          </span>
+        </button>
+      </div>
+
+      <div>
+        <button title="Show or hide filter options" class="side-btn" id="filter-dropdown">
+          <span class="material-icons s-btn">
+            filter_alt
+          </span>
+        </button>
+      </div>
+
+      <div>
+        <button title="Delete Record" class="side-btn" id="delete">
+          <span class="material-icons s-btn">
+            delete
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+
+    <div id="scrollDiv">
+      <div id="scrollToTop">
+        <span class="material-icons">
+          <span class="material-icons">
+            arrow_upward
+            </span>
+        </span>
+      </div>
+    </div>
+
+
+    <main class="container">
+      <div class="grid">
+        <div><h5>Cardano NFT Data</h5></div>
+        
+        <div>
+          <div id="clock">
+            <span id="date"> </span>
+            <span id="timer"> </span>    
+            <button title="Refresh Records" id="reloader">
+              <span class="material-icons" id="reload">
+                replay_circle_filled
+              </span>
+            </button>  
+          </div>
+        </div>
+
+        
+      </div>  
+      
+      
+      <div class="grid select" id="selectBar">
+        <div>
+          <label for="endDate">End Date</label>
+          <select name="lastDate" id="endDate">
+          </select>
+        </div>
+        <div>
+          <label for="startDate">Start Date</label>
+          <select name="firstDate" id="startDate">
+          </select>
+        </div>
+        <div>
+          <div>
+            <button id="comparer">COMPARE</button>
+          </div>
+        </div>
+      </div>
+
+      
+      
+
+      <div><hr></div>
+      <div id="del-container">
+        <div class="grid" id="delete-div">
+          <div>
+            <label for="delete-list">Select file to delete</label>
+            <select name="lastDate" id="delete-list">
+            </select>
+          </div>
+          <div>
+            <button id="delete-btn">DELETE</button>
+          </div>
+        </div>
+        <div><hr></div>
+      </div>
+
+      <div id="filter-container">
+        <div class="grid" id="filter-div">
+          <div class="filt">
+            <label for="min-1d-vol">Minimum 1 Day Volume</label>
+            <input type="text" id="min-1d-vol" name="min-1d-vol" value="-"/>
+          </div>
+          <div class="filt">            
+            <label for="max-1d-vol">Maximum 1 Day Volume</label>
+            <input type="text" id="max-1d-vol" name="max-1d-vol" value="-"/>
+          </div>
+          <div>
+            <button id="filter-1D-btn" class="filter-btn">Filter</button>
+          </div>
+        </div>
+
+        <div class="grid" id="filter-div">
+          <div class="filt">
+            <label for="min-7d-vol">Minimum 7 Day Volume</label>
+            <input type="text" id="min-7d-vol" name="min-7d-vol" value="-"/>
+          </div>
+          <div class="filt">            
+            <label for="max-7d-vol">Maximum 7 Day Volume</label>
+            <input type="text" id="max-7d-vol" name="max-7d-vol" value="-"/>
+          </div>
+          <div>
+            <button id="filter-7D-btn" class="filter-btn">Filter</button>
+          </div>
+        </div>
+        <div><hr></div>
+      </div>
+      
+
+      <div id="display" class="grid"></div>
+      <div>
+        <div id="myTableDiv">
+  
+  
+        </div>  
+      </div>
+      <div></div>
+    </main>
+    
+  
+  <script type="text/javascript" src="js/underscore-esm-min.js"></script>
+	<script src="js/index.js"></script>
+  </body>
+</html>
